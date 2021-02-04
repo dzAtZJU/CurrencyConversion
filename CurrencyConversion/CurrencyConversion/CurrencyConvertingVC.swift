@@ -43,6 +43,7 @@ class CurrencyConvertingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        conversionsGrid.delegate = self
         conversionsGrid.dataSource = self
         (conversionsGrid.collectionViewLayout as!UICollectionViewFlowLayout).itemSize = .init(width: 207, height: 130)
         
@@ -72,6 +73,12 @@ class CurrencyConvertingVC: UIViewController {
         }
         
         self.amount = amount
+    }
+}
+
+extension CurrencyConvertingVC: UICollectionViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        amountTextField.resignFirstResponder()
     }
 }
 

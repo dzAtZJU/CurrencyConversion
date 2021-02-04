@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="97" width="414" height="50.5"/>
                                 <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <action selector="amountChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="yUK-TF-e6P"/>
                                 </connections>
